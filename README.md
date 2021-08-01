@@ -1,4 +1,4 @@
-### Ztheno Development Environment
+### zthenode -- Ztheno Development Environment
 
 <!--
 **zthenode/zthenode** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
