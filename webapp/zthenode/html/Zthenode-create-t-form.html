@@ -30,13 +30,50 @@
  onSubmit="return setFormSubmit(getFormValue2('FormTemplate','FormAction','Form'),getFormValue('FormMethod','Form'),'Form')">
     <div class="form">
 
+    File: <input name="File" value=""/>[t][.t]
+    <input type="checkbox" name="is_File" value="no" unchecked="checked">no</input>
+    <input type="radio" name="Extension" value="t" checked="checked">.t</input>
+    <input type="radio" name="Extension" value="texta">.texta</input>
+    <input type="checkbox" name="is_Extension" value="no" unchecked="">no</input>
+    <br/>
+
     Template: <select name="FormTemplate">
-    <option value="../templates/t/t/t.t">t (../templates/t/t/t.t)</option>
+    <option value="../templates/t/t/t.t">.t file (../templates/t/t/t.t)</option>
+    <option value="../templates/t/t/file-parameters-t.t">.t file parameters (../templates/t/t/file-parameters-t.t)</option>
+    <option value=""></option>
+    <option value="../templates/t/t/parameters.t">t parameters (../templates/t/t/parameters.t)</option>
+    <option value="../templates/t/t/functions.t">t functions (../templates/t/t/functions.t)</option>
     <option value=""></option>
     <option value="/zthenode-cgi/cgi">cgi parameters</option>
     <option value="/zthenode-cgi/cgicatch">catch cgi parameters</option>
     </select>
     <br/>
+    <br/>
+
+    Include:<input name="Include" value=""></input>[file-t][.t]
+    <input type="checkbox" name="is_Include" value="no" checked="checked">no</input>
+    <input type="radio" name="IncludeExtension" value="t" checked="checked">.t</input>
+    <input type="radio" name="IncludeExtension" value="texta">.texta</input>
+    <input type="checkbox" name="is_IncludeExtension" value="no" unchecked="checked">no</input>
+    <br/>
+    
+    Parameters:<input name="Parameters" value=""></input>
+    lower<input type="checkbox" name="is_Lower" value="no" unchecked="checked">no</input>
+    upper/lower<input type="checkbox" name="is_UpperLower" value="no" unchecked="checked">no</input>
+    <input type="checkbox" name="is_Parameters" value="no" unchecked="checked">no</input>
+    <br/>
+    <br/>
+
+    Organization:<input name="Organization" value=""></input>[$organization$]
+    <input type="checkbox" name="is_Organization" value="no" unchecked="checked">no</input>
+    <br/>
+    
+    Author:<input name="Author" value=""></input>[$author$]
+    <input type="checkbox" name="is_Author" value="no" unchecked="checked">no</input>
+    <br/>
+
+    Date:<input name="Date" value=""></input>[%date()%]
+    <input type="checkbox" name="is_Date" value="no" unchecked="checked">no</input>
     <br/>
 
     <br/>
@@ -49,7 +86,7 @@
     <option value=""></option>
     </select><br/>
     Action: <select name="FormAction">
-    <option value="../templates/t/t/t.t">t (../templates/t/t/t.t)</option>
+    <option value="../templates/t/t/t.t">.t file (../templates/t/t/t.t)</option>
     <option value=""></option>
     <option value="/zthenode-cgi/cgi">cgi parameters</option>
     <option value="/zthenode-cgi/cgicatch">catch cgi parameters</option>
